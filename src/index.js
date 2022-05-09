@@ -48,7 +48,6 @@ headerNav[2].textContent = siteContent["nav"]["nav-item-3"];
 headerNav[3].textContent = siteContent["nav"]["nav-item-4"];
 headerNav[4].textContent = siteContent["nav"]["nav-item-5"];
 headerNav[5].textContent = siteContent["nav"]["nav-item-6"];
-
 headerNav.forEach(each => each.className = "italic");
 
 document.querySelector('.cta-text h1').textContent = siteContent.cta.h1;
@@ -70,10 +69,17 @@ document.querySelector(".bottom-content .text-content:nth-of-type(2) p").textCon
 document.querySelector(".bottom-content .text-content:nth-of-type(3) h4").textContent = siteContent["main-content"]["vision-h4"];
 document.querySelector(".bottom-content .text-content:nth-of-type(3) p").textContent = siteContent["main-content"]["vision-content"];
 
+
 document.querySelector(".contact h4").textContent = siteContent.contact["contact-h4"];
 document.querySelector(".contact p:nth-of-type(1)").textContent = siteContent.contact.address;
 document.querySelector(".contact p:nth-of-type(2)").textContent = siteContent.contact.phone;
 document.querySelector(".contact p:nth-of-type(3)").textContent = siteContent.contact.email;
 
+
 document.querySelector("footer a").textContent = siteContent.footer.copyright;
 document.querySelector("footer a").className = "bold";
+
+
+document.querySelector("#logo-img").src = siteContent.images["logo-img"];
+document.querySelector("#cta-img").src = siteContent.images["cta-img"];
+document.querySelector("#middle-img").src = siteContent.images["accent-img"];
